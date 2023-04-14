@@ -5,7 +5,7 @@ import * as Popover from '@radix-ui/react-popover';
 
 const PopoverButton = () => (
   <Popover.Root>
-    <Popover.Trigger className='bg-transparent font-medium hover:border-black border hover:transition-colors shadow-sm duration-200 hover:text-black py-2 px-4 rounded'>
+    <Popover.Trigger className='bg-transparent font-medium hover:border-black border hover:transition-colors shadow-sm duration-150 hover:text-black py-2 px-4 rounded'>
       More info
     </Popover.Trigger>
     <Popover.Portal>

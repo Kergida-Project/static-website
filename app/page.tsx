@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <div className='flex justify-center pt-10'>
-          <a type='button' className='mr-5 font-medium bg-black cursor-pointer text-white hover:bg-transparent border-transparent hover:border-black hover:border hover:transition-colors duration-200 hover:text-black py-2 px-4 rounded-md antialiased'>
+          <a type='button' className='mr-5 font-medium bg-black cursor-pointer text-white hover:bg-transparent border-transparent hover:border-black hover:border hover:transition-colors duration-150 hover:text-black py-2 px-4 rounded-md antialiased'>
             Try it out
           </a>
           <PopoverButton/>
