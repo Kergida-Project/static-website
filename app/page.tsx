@@ -21,9 +21,6 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="hidden flex justify-center pt-10">
-        </div>
-
         <div className="invisible flex justify-center pt-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
