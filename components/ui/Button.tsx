@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const buttonVariants = cva("rounded-md font-medium transition duration-250", {
   variants: {
     variant: {
-      primary: "bg-black border text-white hover:invert",
+      primary: "bg-black text-white hover:invert",
       outlined: "bg-transparent text-black border hover:border-black",
     },
     size: {
