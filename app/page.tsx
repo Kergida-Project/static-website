@@ -22,8 +22,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='mt-6'>
-          <Button variant='primary'>Test Button</Button>
+        <div className='flex mt-6 justify-center'>
+          <Button variant='primary' shadow='sm'>Get Started</Button>
         </div>
 
         <div className="invisible flex justify-center pt-10">
