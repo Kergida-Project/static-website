@@ -39,8 +39,8 @@ const Navbar = () => {
                     <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                         <div className='hidden sm:ml-6 sm:block'>
                             <div className='flex space-x-4'>
-                                <a href='#' className=' text-gray-200 hover:text-white hover:transition-colors duration-300 font-semibold px-3 py-2 text-md' aria-current='page'>Home</a>
-                                <a href='#' className=' text-gray-200 hover:text-white hover:transition-colors duration-300 font-semibold px-3 py-2 text-md' aria-current='page'>Projects</a>
+                                <a href='#' className=' text-gray-300 hover:text-blue-600 hover:transition-colors duration-300 font-medium px-3 py-2 text-md' aria-current='page'>Home</a>
+                                <a href='#' className=' text-gray-300 hover:text-blue-600 hover:transition-colors duration-300 font-medium px-3 py-2 text-md' aria-current='page'>Projects</a>
                             </div>
                         </div>
                     </div>
