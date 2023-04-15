@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/Button";
 import { Heading } from "@/components/ui/Heading";
 import { Inter } from "next/font/google";
 
@@ -19,6 +20,10 @@ export default function Home() {
             improving the world of IT through collaboration and open-source
             software.
           </p>
+        </div>
+
+        <div className='mt-6'>
+          <Button variant='primary'>Test Button</Button>
         </div>
 
         <div className="invisible flex justify-center pt-10">

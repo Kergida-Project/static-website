@@ -1,6 +1,5 @@
 import { FC, LabelHTMLAttributes, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 const headingVariants = cva("tracking-tighter antialiased", {
@@ -19,8 +18,6 @@ const headingVariants = cva("tracking-tighter antialiased", {
     size: "default",
   },
 });
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface HeadingProps
   extends LabelHTMLAttributes<HTMLLabelElement>,
