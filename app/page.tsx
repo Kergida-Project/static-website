@@ -7,14 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={`${inter.className} antialiased`}>
-      <div className="h-screen grid-rows-3">
-        <div className="flex justify-center pt-80 grid-rows-3">
+      <div className="justify-center grid grid-rows-3 gap-7">
+        <div className="">
           <Heading variant="default" size="default">
             Kergida One
           </Heading>
         </div>
 
-        <div className="flex pt-10 justify-center">
+        <div className="">
           <p className=" text-gray-600 text-lg">
             Welcome to the Kergida Project, a small tech initiative dedicated to
             improving the world of IT through collaboration and open-source
@@ -22,11 +22,11 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='flex mt-6 justify-center'>
+        <div className=''>
           <Button variant='primary' shadow='sm'>Get Started</Button>
         </div>
 
-        <div className="invisible flex justify-center pt-10">
+        <div className="invisible">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
