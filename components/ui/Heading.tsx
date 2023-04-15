@@ -2,31 +2,39 @@ import { FC, LabelHTMLAttributes, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const headingVariants = cva("tracking-tighter antialiased", {
-  variants: {
-    variant: {
-      default:
-        "font-extrabold bg-gradient-to-t from-stone-800 to-stone-700 bg-clip-text text-transparent",
+const headingVariants = cva(
+  "leading-tight lg:text-left tracking-tighter antialiased",
+  {
+    variants: {
+      variant: {
+        default: "font-extrabold text-black dark:text-white",
+        main: "font-extrabold bg-gradient-to-b from-stone-700 to-stone-900 bg-clip-text text-transparent",
+      },
+      size: {
+        default: "text-7xl",
+        sm: "text-6xl",
+      },
+      lineHeight: {
+        default: "leading-normal",
+        tight: "leading-tight",
+      },
     },
-    size: {
-      default: "text-7xl h-20",
-      sm: "text-6xl",
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+      lineHeight: "default",
     },
-  },
-  defaultVariants: {
-    variant: "default",
-    size: "default",
-  },
-});
+  }
+);
 
 interface HeadingProps
-  extends LabelHTMLAttributes<HTMLLabelElement>,
+  extends React.HTMLAttributes<HTMLHeadingElement>,
     VariantProps<typeof headingVariants> {}
 
-const Heading: FC<HeadingProps> = forwardRef<HTMLLabelElement, HeadingProps>(
+const Heading: FC<HeadingProps> = forwardRef<HTMLHeadingElement, HeadingProps>(
   ({ className, size, variant, ...props }, ref) => {
     return (
-      <label
+      <h1
         ref={ref}
         className={cn(headingVariants({ variant, size, className }))}
         {...props}
