@@ -2,21 +2,26 @@ import { FC, ButtonHTMLAttributes, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const buttonVariants = cva("rounded-md font-medium transition-colors duration-250", {
+const buttonVariants = cva("rounded-md font-medium transition duration-250", {
   variants: {
     variant: {
-      primary:
-        "bg-black border text-white hover:invert hover:border-black",
-      outlined: "bg-transparent text-black hover:border-2 hover:border-black",
+      primary: "bg-black border text-white hover:invert",
+      outlined: "bg-transparent text-black border hover:border-black",
     },
     size: {
       default: "px-4 py-2 text-base",
       large: "py-5 py-3 text-lg",
     },
+    shadow: {
+      default: "shadow-none",
+      sm: "shadow-sm",
+      md: "shadow-md",
+    },
   },
   defaultVariants: {
     variant: "primary",
     size: "default",
+    shadow: "default",
   },
 });
 
