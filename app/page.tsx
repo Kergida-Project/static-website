@@ -1,4 +1,3 @@
-import PopoverButton from "@/components/Popover";
 import { Heading } from "@/components/ui/Heading";
 import { Inter } from "next/font/google";
 
@@ -22,8 +21,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex justify-center pt-10">
-          <PopoverButton />
+        <div className="hidden flex justify-center pt-10">
         </div>
 
         <div className="invisible flex justify-center pt-10">
