@@ -32,11 +32,11 @@ interface HeadingProps
     VariantProps<typeof headingVariants> {}
 
 const Heading: FC<HeadingProps> = forwardRef<HTMLHeadingElement, HeadingProps>(
-  ({ className, size, variant, ...props }, ref) => {
+  ({ className, size, variant, lineHeight, ...props }, ref) => {
     return (
       <h1
         ref={ref}
-        className={cn(headingVariants({ variant, size, className }))}
+        className={cn(headingVariants({ variant, size, lineHeight, className }))}
         {...props}
       />
     );

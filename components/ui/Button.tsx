@@ -30,11 +30,11 @@ interface ButtonProps
     VariantProps<typeof buttonVariants> {}
 
 const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, size, variant, ...props }, ref) => {
+  ({ className, size, variant, shadow, ...props }, ref) => {
     return (
       <button
         ref={ref}
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(buttonVariants({ variant, size, shadow, className }))}
         {...props}
       />
     );
