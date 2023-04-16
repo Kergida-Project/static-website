@@ -16,4 +16,4 @@ This is repository for Kergida Project's static wbsite. Licensed under GPLv3.
 
 ### Deploying
 
-- Run ``npm dev run`` or ``pnpm dev`` or ``yarn dev``
+- Run ``npm run dev`` or ``pnpm dev`` or ``yarn dev``
