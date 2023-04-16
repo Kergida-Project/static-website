@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Button } from "@/components/ui/Button";
 import { Heading } from "@/components/ui/Heading";
 import { Inter } from "next/font/google";
@@ -8,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Kergida Project</title>
+    </Head>
       <main className={`${inter.className} h-screen flex justify-center items-center`}>
         <div className="flex flex-col">
           <div className="mb-2">
@@ -25,7 +29,7 @@ export default function Home() {
           </div>
 
           <div className="mb-4">
-            <Button variant="primary" shadow="sm">
+            <Button variant="primary" className={styles.backlight}>
               Get Started
             </Button>
           </div>
