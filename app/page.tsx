@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import { Button } from "@/components/ui/Button";
-import { Heading } from "@/components/ui/Heading";
+import { Button } from "@/components/ui/button";
+import { LargeHeading } from "@/components/ui/LargeHeading";
 import { Inter } from "next/font/google";
-import styles from "./Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,16 +11,16 @@ export default function Home() {
     <Head>
       <title>Kergida Project</title>
     </Head>
-      <main className={`${inter.className} h-screen flex justify-center items-center`}>
+      <main className={`${inter.className} flex justify-center items-center`}>
         <div className="flex flex-col">
           <div className="mb-2">
-            <Heading variant="main" size="default">
-              Kergida One
-            </Heading>
+            <LargeHeading variant="main" size="default" lineHeight="tight">
+              Heading
+            </LargeHeading>
           </div>
 
           <div className="mb-4">
-            <p className=" text-gray-600 text-lg">
+            <p className="text-muted-foreground text-lg">
               Welcome to the Kergida Project, a small tech initiative dedicated
               to improving the world of IT through collaboration and open-source
               software.
@@ -29,7 +28,7 @@ export default function Home() {
           </div>
 
           <div className="mb-4">
-            <Button variant="primary" className={styles.backlight}>
+            <Button variant="default">
               Get Started
             </Button>
           </div>
@@ -52,6 +51,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>
+      </>
   );
 }

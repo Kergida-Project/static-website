@@ -1,48 +1,12 @@
-import { FC, LabelHTMLAttributes, forwardRef } from "react";
-import { VariantProps, cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
-
-const headingVariants = cva(
-  "leading-tight lg:text-left tracking-tighter antialiased",
-  {
-    variants: {
-      variant: {
-        default: "font-extrabold text-black dark:text-white",
-        main: "font-extrabold bg-gradient-to-b from-stone-700 to-stone-900 bg-clip-text text-transparent",
-      },
-      size: {
-        default: "text-7xl",
-        sm: "text-6xl",
-      },
-      lineHeight: {
-        default: "leading-normal",
-        tight: "leading-tight",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-      lineHeight: "default",
-    },
+interface LargeHeadingProps {
+    children: string;
   }
-);
-
-interface HeadingProps
-  extends React.HTMLAttributes<HTMLHeadingElement>,
-    VariantProps<typeof headingVariants> {}
-
-const Heading: FC<HeadingProps> = forwardRef<HTMLHeadingElement, HeadingProps>(
-  ({ className, size, variant, lineHeight, ...props }, ref) => {
+  
+  export function Heading(props: LargeHeadingProps) {
     return (
-      <h1
-        ref={ref}
-        className={cn(headingVariants({ variant, size, lineHeight, className }))}
-        {...props}
-      />
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        {props.children}
+      </h1>
     );
   }
-);
-
-Heading.displayName = "Heading";
-
-export { Heading, headingVariants };
+  

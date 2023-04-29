@@ -1,18 +1,17 @@
+"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import { Theme } from "./darkmode";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+window.onload = () => {
+  Theme.themeCheck();
+};
+
+export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}`}>
-        {children}
-      </body>
-    </html>
-  );
+    <>
+      <main>{children}</main>
+    </>
+  )
 }
